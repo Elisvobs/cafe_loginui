@@ -1,0 +1,40 @@
+<head>
+<title>Macnet Internet Cafe</title>
+<link rel="stylesheet" href="custom.css" type="text/css">
+<style>
+body {
+background-color: #ffffff
+}
+</style>
+</head>
+<body>
+<div id="body">
+<div class="login_status_hidden">
+<!--tc:login_status-->
+</div>
+<form name="FormLogin" action="http://192.168.137.1" method=post>
+<table>
+<tr>
+<td>Login</td>
+<td><input name="login" placeholder="login" size="12"></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><input name="password" type="password" placeholder="password" size="15"></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><input type="submit" value="Login"></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><input type="hidden" name="redirect" value="www.gstatic.com/generate_204"</td>
+</tr>
+</table>
+</form>
+</div>
+<script type="text/javascript" language=javascript>
+document.FormLogin.login.focus();
+</script>
+</body>
+</html>
